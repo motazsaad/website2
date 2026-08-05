@@ -16,7 +16,8 @@ Arabic is one of the most widely spoken languages in the world. It is the offici
 
 Enjoy exploring the beauty of the Arabic language!
 
-
 ## Some phrases in Arabic language 
 
 - Marhaba مرحبا
+- Assalam Alycom السلام عليكم 
+
