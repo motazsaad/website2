@@ -21,3 +21,7 @@ Enjoy exploring the beauty of the Arabic language!
 - Marhaba مرحبا
 - Assalam Alycom السلام عليكم 
 
+## Contact
+
+For more information, visit the [Contact Us](contact.md) page.
+
