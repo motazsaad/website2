@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arabic Language</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #f9f8f6; color: #222; }
+    header { background: #2a5567; color: white; padding: 24px 20px; }
+    nav a { color: #f5f2ec; margin-right: 16px; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 940px; margin: 0 auto; padding: 32px 20px; }
+    .hero { background: #ffffff; border-radius: 12px; padding: 30px 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    h1, h2, h3 { color: #1d3a4d; }
+    ul { padding-left: 20px; }
+    .card { background: #ffffff; border-radius: 12px; padding: 24px; margin-top: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+    .phrase { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid #e5e2dc; }
+    .phrase:last-child { border-bottom: none; }
+    .phrase-actions button, #tipButton { background: #2a5567; color: white; border: none; border-radius: 8px; padding: 10px 16px; cursor: pointer; }
+    .phrase-actions button:hover, #tipButton:hover { background: #1f4154; }
+    .hidden { display: none; }
+    footer { text-align: center; padding: 20px; color: #666; }
+    .contact-link { color: #2a5567; text-decoration: none; font-weight: 700; }
+    .contact-link:hover { text-decoration: underline; }
+    .tip-box { background: #eef6fb; padding: 18px; border-radius: 10px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="#phrases">Phrases</a>
+      <a href="#tips">Tips</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Arabic Language</h1>
+      <p>Arabic is one of the most widely spoken languages in the world. It is the official language of many countries in the Middle East and North Africa.</p>
+      <p>This page brings together facts, useful phrases, and interactive learning tools to help you get started.</p>
+    </section>
+
+    <section class="card">
+      <h2>Why Arabic is Special</h2>
+      <ul>
+        <li>It has a rich history and strong literary traditions.</li>
+        <li>It is the language of the Quran and many classical works.</li>
+        <li>It is written from right to left, with beautiful flowing script.</li>
+        <li>Arabic is spoken across many countries and has many dialects.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="phrases">
+      <h2>Useful Phrases</h2>
+      <div class="phrase">
+        <div><strong>Marhaba</strong> مرحبا</div>
+        <div class="phrase-actions"><button data-target="translation1" class="toggle-translation">Show translation</button></div>
+      </div>
+      <div id="translation1" class="hidden">Hello</div>
+
+      <div class="phrase">
+        <div><strong>Assalam Alaykum</strong> السلام عليكم</div>
+        <div class="phrase-actions"><button data-target="translation2" class="toggle-translation">Show translation</button></div>
+      </div>
+      <div id="translation2" class="hidden">Peace be upon you</div>
+
+      <div class="phrase">
+        <div><strong>Shukran</strong> شكراً</div>
+        <div class="phrase-actions"><button data-target="translation3" class="toggle-translation">Show translation</button></div>
+      </div>
+      <div id="translation3" class="hidden">Thank you</div>
+
+      <div class="phrase">
+        <div><strong>Min fadlak</strong> من فضلك</div>
+        <div class="phrase-actions"><button data-target="translation4" class="toggle-translation">Show translation</button></div>
+      </div>
+      <div id="translation4" class="hidden">Please</div>
+    </section>
+
+    <section class="card" id="tips">
+      <h2>Learning Tip</h2>
+      <div class="tip-box" id="tipText">Press the button to get a new Arabic learning tip.</div>
+      <button id="tipButton">Show a learning tip</button>
+    </section>
+
+    <section class="card">
+      <h2>Get Started</h2>
+      <p>Practice the phrases above with friends or classmates, and explore the alphabet and pronunciation.</p>
+      <p>Visit our <a class="contact-link" href="contact.html">Contact page</a> for questions or feedback.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Arabic Language Website · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
